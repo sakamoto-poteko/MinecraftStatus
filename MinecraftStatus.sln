@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{115C8AEB-9965-446A-8C05-2646E57CC9E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F046A393-7675-452B-A658-C5EE7935C2C9}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MinecraftStatus", "src\MinecraftStatus\MinecraftStatus.xproj", "{95394212-3B51-4FFF-BD3F-F45E4FF91B2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95394212-3B51-4FFF-BD3F-F45E4FF91B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95394212-3B51-4FFF-BD3F-F45E4FF91B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95394212-3B51-4FFF-BD3F-F45E4FF91B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95394212-3B51-4FFF-BD3F-F45E4FF91B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95394212-3B51-4FFF-BD3F-F45E4FF91B2B} = {115C8AEB-9965-446A-8C05-2646E57CC9E0}
+	EndGlobalSection
+EndGlobal
