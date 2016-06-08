@@ -10,6 +10,8 @@ namespace MinecraftStatus.Controllers
     {
         public IActionResult Index()
         {
+            var pinger = new MCStatus.McPinger();
+            pinger.Ping("mc.afa.moe", 25565);
             return View();
         }
 
