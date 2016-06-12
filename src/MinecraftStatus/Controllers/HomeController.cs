@@ -15,7 +15,7 @@ namespace MinecraftStatus.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult Status()
         {
             ViewData["Message"] = "Your application description page.";
 
