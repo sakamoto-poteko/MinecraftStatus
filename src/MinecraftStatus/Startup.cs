@@ -28,6 +28,8 @@ namespace MinecraftStatus
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+            services.AddSingleton<Service.IMCServerStatusService, Service.MCServerStatusService>();
             services.AddMvc();
         }
 
@@ -48,7 +50,6 @@ namespace MinecraftStatus
             }
 
             app.UseStaticFiles();
-
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
