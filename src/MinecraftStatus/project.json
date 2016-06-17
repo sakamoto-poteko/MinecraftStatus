@@ -1,4 +1,8 @@
 {
+    "title": "Minecraft Status Server",
+    "version": "1.0.1",
+    "copyright": "Sakamoto Poteko (c) 2016",
+    "description": "Show the status of a MC server",
     "dependencies": {
         "Microsoft.NETCore.App": {
             "version": "1.0.0-rc2-3002702",

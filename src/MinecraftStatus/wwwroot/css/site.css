@@ -29,3 +29,11 @@ textarea {
     display: none
   }
 }
+
+.playername {
+    display: inline;
+}
+
+.skin-popup {
+    position: fixed;
+}

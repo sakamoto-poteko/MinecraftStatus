@@ -63,8 +63,8 @@
                     </div>
                     foreach (var player in status.Players.Sample)
                     {
-                        <div class="row playername" player-id="@player.Id" player-name="@player.Name">
-                            @player.Name
+                        <div class="row">
+                            <p class="playername" player-id="@player.Id" player-name="@player.Name" onmouseover="showSkinPopup(this);" onmouseout="removeSkinPopup(this)">@player.Name</p>
                         </div>
                     }
                 }
