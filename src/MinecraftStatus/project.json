@@ -1,6 +1,6 @@
 {
     "title": "Minecraft Status Server",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "copyright": "Sakamoto Poteko (c) 2016",
     "description": "Show the status of a MC server",
     "dependencies": {
