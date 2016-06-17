@@ -13,5 +13,5 @@ Check the status of a Minecraft server
 2. `unzip MinecraftStatus.1.0.2.zip`
 3. `cd MinecraftStatus`
 4. Change `appsettings.json` to fit your need
-5. `dotnet MinecraftStatus/MinecraftStatus.dll`
+5. `dotnet MinecraftStatus.dll`
 6. It works!
