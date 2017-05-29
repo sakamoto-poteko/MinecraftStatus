@@ -28,41 +28,46 @@
             <div class="col-md-1">
                 <img alt="favicon" src="@status.Favicon" />
             </div>
-            <div class="col-md-10">
+            <div class="col-md-6">
                 <div class="row">
-                    <div class="col-md-3">Motd</div>
-                    <div class="col-md-3 server-info">@status.Description.Text</div>
+                    <div class="col-md-2">Motd</div>
+                    <div class="col-md-4 server-info">@status.Description.Text</div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">Version</div>
-                    <div class="col-md-3 server-info">@status.Version.Name</div>
+                    <div class="col-md-2">Version</div>
+                    <div class="col-md-4 server-info">@status.Version.Name</div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">Protocol</div>
-                    <div class="col-md-3 server-info">@status.Version.Protocol</div>
+                    <div class="col-md-2">Protocol</div>
+                    <div class="col-md-4 server-info">@status.Version.Protocol</div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">Online</div>
-                    <div class="col-md-3 server-info">@status.Players.Online</div>
+                    <div class="col-md-2">Online</div>
+                    <div class="col-md-4 server-info">@status.Players.Online</div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">Max</div>
-                    <div class="col-md-3 server-info">@status.Players.Max</div>
+                    <div class="col-md-2">Max</div>
+                    <div class="col-md-4 server-info">@status.Players.Max</div>
                 </div>
             </div>
-
             <div class="col-md-4">
+                <div class="row">
+                    Online Players (@status.Players.Online):
+                </div>
                 @if (status.Players.Online != 0)
                 {
-                    <div class="row">
-                        Online Players:
-                    </div>
                     foreach (var player in status.Players.Sample)
                     {
                         <div class="row">
                             <p class="playername" player-id="@player.Id" player-name="@player.Name" onmouseover="showSkinPopup(this);" onmouseout="removeSkinPopup(this)">@player.Name</p>
                         </div>
                     }
+                }
+                else
+                {
+                    <div class="row">
+                        <p class="playername">N/A</p>
+                    </div>
                 }
             </div>
         </div>

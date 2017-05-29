@@ -21,13 +21,14 @@ function showSkinPopup(element) {
     var $element = $(element);
     var uuid = $element.attr("player-id");
     var skin = playerSkinCache.get(uuid);
+    var username = $element.attr("player-name");
 
     if (skin === undefined) {
         img = new Image();
         img.width = 120;
         img.height = 270;
-        img.alt = $element.attr("player-name");
-        img.src = "http://mcapi.afa.moe/" + uuid;
+        img.alt = username;
+        img.src = "https://mcapi.ca/skin/" + username;
         img.onload = function () {
             playerSkinCache.set(uuid, img);
             renderPlayerSkin($element, img);
